@@ -904,7 +904,10 @@ def is_valid_endpoint_url(endpoint_url):
 
     """
     parts = urlsplit(endpoint_url)
+    print('is_valid_endpoint_url -- PARTS: ', parts)
     hostname = parts.hostname
+    print('is_valid_endpoint_url -- HOSTNAME: ', hostname)
+
     if hostname is None:
         return False
     if len(hostname) > 255:

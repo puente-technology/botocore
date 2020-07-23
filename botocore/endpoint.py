@@ -281,6 +281,7 @@ class EndpointCreator(object):
                         proxies=None,
                         socket_options=None,
                         client_cert=None):
+        print('create_endpoint: ', endpoint_url)
         if not is_valid_endpoint_url(endpoint_url):
 
             raise ValueError("Invalid endpoint: %s" % endpoint_url)
